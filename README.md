@@ -78,37 +78,27 @@ Two carefully designed prompts ensure accurate results:
 
 **A. Analysis Prompt**
 
-Used for candidate evaluation:
-
-Profile alignment
-
-Strengths & weaknesses
-
-Missing skills
+- Used for candidate evaluation:
+- Profile alignment
+- Strengths & weaknesses
+- Missing skills
 
 **B. ATS Matching Prompt**
 
-Used to compute:
+**Used to compute:**
 
-Percentage match
-
-Missing keywords
-
-Final suggestions
-
+- Percentage match
+- Missing keywords
+- Final suggestions
 This structured prompting ensures the model outputs relevant and consistent results.
 
 **7. Processing Workflow**
 
-User uploads resume (PDF)
-
-PDF converted → image → Base64 encoded
-
-Input prompt + job description fed into Gemini Vision
-
-AI analyzes resume content
-
-Output displayed in Streamlit UI
+- User uploads resume (PDF)
+- PDF converted → image → Base64 encoded
+- Input prompt + job description fed into Gemini Vision
+- AI analyzes resume content
+- Output displayed in Streamlit UI
 
 **8. Results**
 
@@ -116,59 +106,44 @@ The system returns:
 
 **Sample Output**
 ATS Match: 78%
-Missing Keywords: Python, Power BI, Agile
-Strengths: Clear work history, relevant projects
-Weaknesses: Missing certifications, no metrics in achievements
-Final Recommendation: Add technical keywords and quantify results.
+- **Missing Keywords:** Python, Power BI, Agile
+- **Strengths:** Clear work history, relevant projects
+- **Weaknesses:** Missing certifications, no metrics in achievements
+- **Final Recommendation:** Add technical keywords and quantify results.
 
 
 **The output is:**
 
-Clear
-
-Professional
-
-Recruiter-style evaluation
+- Clear
+- Professional
+- Recruiter-style evaluation
 
 **9. Limitations**
 
-Only analyzes the first page of the PDF
+- Only analyzes the first page of the PDF
+- Not a replacement for human HR screening
+- Can only evaluate visible text (no deep parsing)
 
-Not a replacement for human HR screening
-
-Can only evaluate visible text (no deep parsing)
-
-**10. Future Improvements
-**
-Multi-page PDF parsing
-
-Resume rewriting suggestions
-
-JSON-structured output
-
-Downloadable ATS report as PDF
-
-Integration with job portals
-
-Support for multiple resumes comparison
+**10. Future Improvements**
+- Multi-page PDF parsing
+- Resume rewriting suggestions
+- JSON-structured output
+- Downloadable ATS report as PDF
+- Integration with job portals
+- Support for multiple resumes comparison
 
 **11. Conclusion**
 
 The ATS Resume Expert demonstrates an effective use of AI vision models to automate resume evaluation.
 It improves the job preparation process by offering:
 
-Skill gap insights
+- Skill gap insights
+- ATS readiness scores
+- Structured professional analysis
 
-ATS readiness scores
+**This tool can be scaled for:**
 
-Structured professional analysis
-
-This tool can be scaled for:
-
-Job portals
-
-Recruitment agencies
-
-Career coaching platforms
-
-Resume-building applications
+- Job portals
+- Recruitment agencies
+- Career coaching platforms
+- Resume-building applications
